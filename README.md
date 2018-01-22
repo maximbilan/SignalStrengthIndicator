@@ -59,10 +59,19 @@ enum Level: Int {
 
 ## Customization
 
+Color:
 <pre>
-indicator.color = UIColor.gray  // Color
-indicator.spacing = 5           // Spacing between bars
-indicator.edgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10) // Margins
+indicator.color = UIColor.gray
+</pre>
+
+Spacing between bars:
+<pre>
+indicator.spacing = 5
+</pre>
+
+Margins:
+<pre>
+indicator.edgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
 </pre>
 
 ## License
