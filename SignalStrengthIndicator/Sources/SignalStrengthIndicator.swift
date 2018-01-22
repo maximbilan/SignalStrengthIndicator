@@ -10,11 +10,37 @@ import UIKit
 
 public class SignalStrengthIndicator: UIView {
 	
-	// MARK: - Public Properties
+	// MARK: - Level
+	
+	public enum Level: Int {
+		case noSignal
+		case veryLow
+		case low
+		case good
+		case veryGood
+		case excellent
+	}
+	
+	private var _level = Level.noSignal
+	
+	public var level: Level {
+		get {
+			return _level
+		}
+		set(newValue) {
+			_level = newValue
+			setNeedsDisplay()
+		}
+	}
+	
+	// MARK: - Customization
 	
 	public var edgeInsets = UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3)
 	public var spacing: CGFloat = 3
-	public var indicatorsCount: Int = 5
+	
+	// MARK: - Constants
+	
+	private let indicatorsCount: Int = 5
 	
 	// MARK: - Drawing
 	
@@ -24,6 +50,8 @@ public class SignalStrengthIndicator: UIView {
 		}
 		
 		ctx.saveGState()
+		
+		let levelValue = level.rawValue
 		
 		let barsCount = CGFloat(indicatorsCount)
 		let barWidth = (rect.width - edgeInsets.right - edgeInsets.left - ((barsCount - 1) * spacing)) / barsCount
@@ -38,14 +66,20 @@ public class SignalStrengthIndicator: UIView {
 			let cornerRadius: CGFloat = barWidth * 0.25
 			let barRect = CGRect(x: x, y: y, width: width, height: height)
 			let clipPath: CGPath = UIBezierPath(roundedRect: barRect, cornerRadius: cornerRadius).cgPath
+			
 			ctx.addPath(clipPath)
 			ctx.setFillColor(UIColor.black.cgColor)
 			ctx.setStrokeColor(UIColor.black.cgColor)
-			ctx.fillPath()
+			
+			if index + 1 > levelValue {
+				ctx.strokePath()
+			}
+			else {
+				ctx.fillPath()
+			}
 		}
 		
 		ctx.restoreGState()
-		
 	}
 	
 }

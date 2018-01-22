@@ -9,17 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
+	
+	// MARK: - Outlets
+	
+	@IBOutlet weak var signalStrength: SignalStrengthIndicator!
+	
+	// MARK: - Level
+	
+	fileprivate var level: Int = 0
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+	// MARK: - Actions
+	
+	@IBAction func upPressed(_ sender: UIButton) {
+		let value = self.level + 1
+		if let level = SignalStrengthIndicator.Level(rawValue: value) {
+			signalStrength.level = level
+			 self.level = value
+		}
 	}
-
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
+	
+	@IBAction func downPressed(_ sender: UIButton) {
+		let value = self.level - 1
+		if let level = SignalStrengthIndicator.Level(rawValue: value) {
+			signalStrength.level = level
+			self.level = value
+		}
 	}
-
-
+	
 }
-
