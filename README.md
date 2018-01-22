@@ -28,10 +28,10 @@ Copy <i>SignalStrengthIndicator.swift</i> to your project.
 
 ## Usage
 
-There is an example in the repository. The example shows how to add the control via <i>storyboard</i>(Interface Builder). Also, I can easily add via code.
+There is an example in the repository. The example shows how to add the control via <i>storyboard</i> (Interface Builder). Also, I can easily add via code.
   
 <pre>
-let indicator = SignalStrengthIndicator()'
+let indicator = SignalStrengthIndicator()
 
 // Set up frame
 
@@ -55,6 +55,14 @@ enum Level: Int {
   case veryGood
   case excellent
 }
+</pre>
+
+## Customization
+
+<pre>
+indicator.color = UIColor.gray  // Color
+indicator.spacing = 5           // Spacing between bars
+indicator.edgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10) // Margins
 </pre>
 
 ## License
