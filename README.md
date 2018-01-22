@@ -28,7 +28,7 @@ Copy <i>SignalStrengthIndicator.swift</i> to your project.
 
 ## Usage
 
-There is an example in the repository. The example shows how to add the control via <i>storyboard<i/>(Interface Builder). Also, I can easily add via code.
+There is an example in the repository. The example shows how to add the control via <i>storyboard</i>(Interface Builder). Also, I can easily add via code.
   
 <pre>
 let indicator = SignalStrengthIndicator()'
@@ -48,12 +48,12 @@ There is 6 cases of indication:
 
 <pre>
 enum Level: Int {
-		case noSignal
-		case veryLow
-		case low
-		case good
-		case veryGood
-		case excellent
+  case noSignal
+  case veryLow
+  case low
+  case good
+  case veryGood
+  case excellent
 }
 </pre>
 
