@@ -18,6 +18,14 @@ class ViewController: UIViewController {
 	
 	fileprivate var level: Int = 0
 
+	// MARK: - Controller Loading
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
+		signalStrength.color = UIColor.gray
+	}
+	
 	// MARK: - Actions
 	
 	@IBAction func upPressed(_ sender: UIButton) {

@@ -37,6 +37,7 @@ public class SignalStrengthIndicator: UIView {
 	
 	public var edgeInsets = UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3)
 	public var spacing: CGFloat = 3
+	public var color = UIColor.black
 	
 	// MARK: - Constants
 	
@@ -68,8 +69,8 @@ public class SignalStrengthIndicator: UIView {
 			let clipPath: CGPath = UIBezierPath(roundedRect: barRect, cornerRadius: cornerRadius).cgPath
 			
 			ctx.addPath(clipPath)
-			ctx.setFillColor(UIColor.black.cgColor)
-			ctx.setStrokeColor(UIColor.black.cgColor)
+			ctx.setFillColor(color.cgColor)
+			ctx.setStrokeColor(color.cgColor)
 			
 			if index + 1 > levelValue {
 				ctx.strokePath()
