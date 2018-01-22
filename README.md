@@ -1,4 +1,4 @@
-# Signal Strength Indicator
+## Signal Strength Indicator
 
 [![Version](https://img.shields.io/cocoapods/v/SignalStrengthIndicator.svg?style=flat)](http://cocoadocs.org/docsets/SignalStrengthIndicator)
 [![License](https://img.shields.io/cocoapods/l/SignalStrengthIndicator.svg?style=flat)](http://cocoadocs.org/docsets/SignalStrengthIndicator)
@@ -10,7 +10,11 @@
 
 <img src="https://raw.github.com/maximbilan/SignalStrengthIndicator/master/test.gif" alt="preview text" width="100" height="60">
 
-# Installation
+## Description
+
+It's just a UI component, shows an indicator of the connectivity, like a standard iOS cellular indicator. The control has simple customization: color, edges, spacing.
+
+## Installation
 
 <b>CocoaPods:</b>
 <pre>
