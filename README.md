@@ -8,7 +8,7 @@
 
 ## Preview
 
-![alt tag](https://raw.github.com/maximbilan/SignalStrengthIndicator/master/test.gif)
+![alt tag](https://raw.github.com/maximbilan/SignalStrengthIndicator/master/test.gif | width=100
 
 # Installation
 
