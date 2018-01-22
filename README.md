@@ -6,6 +6,10 @@
 [![CocoaPods](https://img.shields.io/cocoapods/dt/SignalStrengthIndicator.svg)](https://cocoapods.org/pods/SignalStrengthIndicator)
 [![CocoaPods](https://img.shields.io/cocoapods/dm/SignalStrengthIndicator.svg)](https://cocoapods.org/pods/SignalStrengthIndicator)
 
+## Preview
+
+![alt tag](https://raw.github.com/maximbilan/SignalStrengthIndicator/master/test.gif)
+
 # Installation
 
 <b>CocoaPods:</b>
