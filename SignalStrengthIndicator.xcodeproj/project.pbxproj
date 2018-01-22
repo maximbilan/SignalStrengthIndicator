@@ -12,6 +12,7 @@
 		948586242015D016003E0963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948586222015D016003E0963 /* Main.storyboard */; };
 		948586262015D016003E0963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 948586252015D016003E0963 /* Assets.xcassets */; };
 		948586292015D016003E0963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948586272015D016003E0963 /* LaunchScreen.storyboard */; };
+		948586322015D09B003E0963 /* SignalStrengthIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948586312015D09B003E0963 /* SignalStrengthIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		948586252015D016003E0963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		948586282015D016003E0963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9485862A2015D016003E0963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		948586312015D09B003E0963 /* SignalStrengthIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalStrengthIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		9485861D2015D016003E0963 /* SignalStrengthIndicator */ = {
 			isa = PBXGroup;
 			children = (
+				948586302015D086003E0963 /* Sources */,
 				9485861E2015D016003E0963 /* AppDelegate.swift */,
 				948586202015D016003E0963 /* ViewController.swift */,
 				948586222015D016003E0963 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				9485862A2015D016003E0963 /* Info.plist */,
 			);
 			path = SignalStrengthIndicator;
+			sourceTree = "<group>";
+		};
+		948586302015D086003E0963 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				948586312015D09B003E0963 /* SignalStrengthIndicator.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				948586212015D016003E0963 /* ViewController.swift in Sources */,
+				948586322015D09B003E0963 /* SignalStrengthIndicator.swift in Sources */,
 				9485861F2015D016003E0963 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
