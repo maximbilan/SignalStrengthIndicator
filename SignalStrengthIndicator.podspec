@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "SignalStrengthIndicator"
-s.version      = "0.1.0"
+s.version      = "0.1.1"
 s.summary      = "Signal Strength Indicator"
 s.description  = "Indicator shows a level of connection, like as default iOS indicator of cellular network"
 s.homepage     = "https://github.com/maximbilan/SignalStrengthIndicator"
