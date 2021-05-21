@@ -12,10 +12,10 @@ let package = Package(
     ],
     dependencies: [
     ],
-    path: "./SignalStrengthIndicator/Sources/",
     targets: [
         .target(
             name: "SignalStrengthIndicator",
-            dependencies: []),
+            dependencies: [],
+            path: "SignalStrengthIndicator/Sources/"),
     ]
 )
